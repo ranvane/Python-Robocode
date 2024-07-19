@@ -20,7 +20,8 @@ from loguru import logger
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     """
-    Class documentation goes here.
+    码构建了一个功能丰富的机器人战斗模拟程序，用户可以通过界面与程序交互，加载机器人代码，
+    开始或复用上次的战斗，控制战斗节奏，查看统计信息等。
     """
 
     def __init__(self, parent=None):

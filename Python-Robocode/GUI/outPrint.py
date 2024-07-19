@@ -10,7 +10,7 @@ from Ui_outPrint import Ui_Form
 
 class outPrint(QWidget, Ui_Form):
     """
-    Class documentation goes here.
+    允许外部代码将消息传递给outPrint类，并将这些消息显示在textEdit控件中。
     """
     def __init__(self, parent = None):
         """

@@ -48,3 +48,30 @@ Any help is welcome! This is a beta version, tell me if you notice any bugs
   - [ ]  To prevent bot's to use Sockets, urllib2, and Sub/Multi Processing Module (more safe for users)
   - [x]  Window resizable 
   - [ ]  Write Calculus in cython (to speed up the code) 
+
+## conf.py配置：
+#### 配置extensions，修改source/conf.py文件内容：
+```
+extensions = [
+    'sphinx.ext.autodoc',
+    'sphinx.ext.doctest',
+    'sphinx.ext.intersphinx',
+    'sphinx.ext.todo',
+    'sphinx.ext.coverage',
+    'sphinx.ext.mathjax'
+]
+```
+
+配置项目路径：
+
+```
+import os
+import sys
+sys.path.insert(0, os.path.abspath('../../'))
+
+```
+这块路径使用../../是因为我们的demo是一个包，如果demo下面没有__init__.py文件，则可以路径为../../demo。
+## 生成rst文件
+使用sphinx-apidoc生成rst文件，-o 后面跟的是保存rst文件的路径，你的index.rst文件在哪个目录，就指定哪个目录，然后最后面是代码路径。
+
+sphinx-apidoc -o C:\Python-Robocode\doc\source C:\Python-Robocode\Python-Robocode
