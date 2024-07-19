@@ -1,7 +1,10 @@
 ![alt text](https://github.com/turkishviking/Python-Robocode/blob/master/Python-Robocode/robotImages/robotTitre.png?raw=true "Python-Robocode")
 ===============
  
+Fork from https://github.com/turkishviking/Python-Robocode 
 
+修复bug
+代码添加中文注释
 
 ### A Fork of Robocode for python programming
 
